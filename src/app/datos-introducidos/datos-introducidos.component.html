@@ -1,0 +1,13 @@
+<div *ngIf="arrayFormulario.length !== 0">
+  <p class="h1">Datos introducidos:</p>
+  <table class="table">
+    <tr>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Mensaje</th>
+    </tr>
+    <tr>
+      <td *ngFor="let campo of arrayFormulario">{{ campo }}</td>
+    </tr>
+  </table>
+</div>
